@@ -6,3 +6,8 @@ def capitals(word):
             result.append(i)
             
     return result
+
+# Another Solution
+
+def capitals(word):
+    return [i for (i, c) in enumerate(word) if c.isupper()]
